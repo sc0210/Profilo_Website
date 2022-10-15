@@ -1,59 +1,59 @@
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 650px) {
     .navbar .navbar-text a {
         display: none;
     }
     .navbar .navbar-text a.icon {
         display: flex;
-        padding-right: 35px;
+        padding-right: 15px;
+    }
+    .navbar .navbar-text.responsive a.icon {
+        padding-right: 15px;
     }
     .navbar .navbar-text.responsive a {
-        display: block;
+        display: flex;
+        flex-direction: column;
         justify-items: center;
-        background-color: rgb(255, 255, 25, 0.3);
+        background: #95A098;
     }
     .content {
-        background-color: rgb(213, 206, 190, 0.95);
+        background: #DDD0C8;
         border-radius: 16px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 30px;
-        max-width: 90%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        max-width: 80%;
     }
     .content-text {
-        border-radius: 16px;
         font-size: 0.5rem;
         margin-left: auto;
         margin-right: auto;
         padding: 10px;
         max-width: 100%;
-        display: block;
     }
     .content-image {
-        margin: auto;
         max-width: 100%;
         padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
-@media screen and (min-width: 430px) {
+@media screen and (min-width: 650px) {
     .navbar .navbar-text.responsive a.icon {
-        position: absolute;
-        right: 0;
-        top: 0;
+        display: flex;
+        padding-right: 35px;
     }
     .navbar .navbar-text.responsive a {
         float: none;
         display: block;
         text-align: left;
     }
-    .navbar .navbar-text.responsive {
-        position: relative;
-    }
     .content {
-        background-color: rgb(213, 206, 190, 0.95);
+        background: #DDD0C8;
         border-radius: 16px;
         display: flex;
         flex-direction: row;
@@ -77,6 +77,9 @@
         max-width: 100%;
         padding: 10px;
     }
+    .navbar .navbar-text .icon {
+        display: none;
+    }
 }
 
 body,
@@ -85,6 +88,11 @@ html {
     margin: auto;
     position: relative;
     min-height: 100vh;
+    background: #7A848D;
+    background-image: linear-gradient(0.75turn, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url("image/person.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .navbar {
@@ -100,10 +108,6 @@ html {
     padding: 12px 20px;
 }
 
-.navbar .navbar-text .icon {
-    display: none;
-}
-
 .navbar .navbar-text {
     display: inline;
     list-style: none;
@@ -111,33 +115,36 @@ html {
     padding: 22px 0 22px;
     position: absolute;
     right: 0;
+    margin-right: 5px;
 }
 
 .navbar .navbar-text a {
     cursor: pointer;
-    text-align: right;
     text-decoration: none;
     /* 移除超連結底線 */
     color: inherit;
     /* 移除超連結顏色 */
     font-size: 1.1rem;
     padding: 12px 16px;
-    transition: 0.3s;
+    margin-right: 5px;
+    transition: 0.5s;
 }
 
 .navbar .navbar-text a:hover {
-    background-color: rgba(197, 144, 30);
+    background: rgba(8, 41, 71, 0.6);
     padding: 12px 16px;
-    border-radius: 6px;
+    border-radius: 22px;
     color: rgb(255, 255, 255);
     cursor: pointer;
 }
 
-.herobar-image {
-    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-    background-image: linear-gradient(rgb(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url("./image/bg.jpg");
-    background-repeat: no-repeat;
+.herobar-iamge {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read
+    background-image: linear-gradient( rgba(255, 255, 0, 0.5), rgba(0, 0, 255, 0.5)), url("./image/bg.jpg");*/
+    background-image: url("image/bg.jpg");
     background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left top, right bottom, center center;
 }
 
 .herobar-image .herobar-text {
@@ -146,13 +153,13 @@ html {
     left: 50%;
     text-align: center;
     transform: translate(-50%, -50%);
-    color: rgba(197, 144, 30);
-    font-size: 5vh;
-    font-family: 'Slabo 27px', serif;
+    color: rgb(219, 173, 73);
+    font-size: 5rem;
+    font-family: 'Slabo', serif;
 }
 
 #content-wrap {
-    padding-bottom: 4.5rem;
+    padding-bottom: 45px;
 }
 
 #personal-photo {
@@ -170,8 +177,8 @@ iframe {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 3.5rem;
+    height: 45px;
     text-align: center;
-    padding-bottom: 10px;
-    background: rgb(130, 110, 77);
+    padding: 10px 0 5px;
+    background: #B09279;
 }
