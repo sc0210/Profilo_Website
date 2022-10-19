@@ -9,41 +9,60 @@
 
     <link href="style.css" rel="stylesheet">
     <script src="index.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon " href="/image/icon.png ">
-    <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
+
 <body>
-    <div id="content-wrap">
-        <!-- Navbar section -->
-        <div class="navbar">
-            <div>
-                <a href="index.html "><img class="navbar-logo " src="./image/icon.png " alt="Logo "></a>
+    <!-- Navbar section -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img width="35px" src="./image/icon.png " alt="Logo "></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav  mb-2 mb-md-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link activate" aria-current="page " href="index.html ">Home</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link activate" aria-current="page " href="profilo.html">Profilo</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link activate" aria-current="page " href="freelancer.html">Projects</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link activate" aria-current="page " href="freelancer.html">Contacts</a></li>
+                </ul>
             </div>
-            <div class="navbar-text " id="navbar">
-                <a href="index.html ">Profolio</a>
-                <a target="_blank " href="academic.html ">Academic</a>
-                <a target="_blank " href="freelancer.html ">Freelancer</a>
-                <a class="icon" href="javascript:void(0);" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
+        </div>
+    </nav>
+
+
+    <!-- HeroBar section -->
+    <main class="container-fluid text-center">
+        <div class=" p-2 rounded ">
+            <h1>Freelancer</h1>
+            <p class="lead ">I am a photographer based on Taipei</p>
+            <p class="lead ">
+                <a href="# " class="btn btn-lg btn-secondary fw-bold ">Learn more</a>
+            </p>
         </div>
 
-        <!-- HeroBar section -->
-        <div class="herobar-image">
-            <div class="herobar-text">
-                <p>I am a photographer based on Taipei</p>
-                <button>For more information</button>
-            </div>
-        </div>
-    </div>
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
     <!-- Footer section -->
-    <div class="footer ">
-        <span>Copyright &copy 2022 sc0210 
-            <br>All rights reserved.</span>
-    </div>
+    <footer class="text-muted text-center fixed-bottom">
+        <div class="container">
+            <p> Copyright &copy 2022 sc0210
+                <br>All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
