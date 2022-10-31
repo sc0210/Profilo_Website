@@ -1,68 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TMUFMC</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>TMUFMC</title>
 
-    <link href="style.css" rel="stylesheet">
-    <script src="index.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <link rel="icon" type="image/x-icon " href="/image/icon.png ">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
+        <link href="style.css" rel="stylesheet" />
+        <script src="index.js"></script>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0"
+            crossorigin="anonymous" />
+        <link rel="icon" type="image/x-icon " href="/image/icon.png " />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+            />
+    </head>
 
+    <body style="background:linear-gradient(black, white) ">
+        <!-- Navbar section -->
+        <nav class="navbar navbar-expand-md navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img width="40px" src="./image/icon.png " alt="Logo " /></a>
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-
-<body>
-    <!-- Navbar section -->
-    <nav class="navbar navbar-expand-md navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img width="35px" src="./image/icon.png " alt="Logo "></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
-                <ul class="navbar-nav  mb-2 mb-md-0 ">
-                    <li class="nav-item">
-                        <a class="nav-link activate" aria-current="page " href="index.html ">Home</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link activate" aria-current="page " href="profilo.html">Profilo</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link activate" aria-current="page " href="projects.html">Projects</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link activate" aria-current="page " href="projects.html">Contacts</a></li>
-                </ul>
+                <div class="collapse navbar-collapse justify-content-end"
+                    id="navbarCollapse">
+                    <ul class="navbar-nav mb-2 mb-md-0">
+                        <li class="nav-item">
+                            <a class="nav-link activate pe-auto"
+                                aria-current="page " href="index.html ">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link activate pe-auto"
+                                aria-current="page " href="profilo.html">Profilo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link activate pe-auto"
+                                aria-current="page " href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link activate pe-auto"
+                                aria-current="page " href="contact.html">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
+        </nav>
+
+
+        <!-- Carouse section -->
+        <div id="carouselExampleControls" class="carousel slide carousel-fade"
+            data-bs-ride="carousel">
+
+            <!-- Indicators section -->
+            <div class="carousel-indicators">
+                <button type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+
+            <!-- Inner section -->
+            <div class="carousel-inner">
+                <!-- First image -->
+                <div class="carousel-item active" data-bs-interval="20000">
+                    <img src="./image/club/speaker.jpg" class=""
+                        style="width:100%; height: 800px; object-fit: cover;"
+                        alt="..."/>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="display-3 fw-bold">Lecture speaker</h5>
+                        <p class="fs-3 fw-lighter">
+                            Share information with general members<br />
+                            Photography club/ Filmmkaing club/ GDSC@TMU
+                        </p>
+                    </div>
+                    <div class="carousel-caption d-md-none ">
+                        <h3>Lecture speaker</h3>
+                    </div>
+                </div>
+
+                <!-- Second image -->
+                <div class="carousel-item" data-bs-interval="20000">
+                    <img src="./image/club/3people.jpg" class="mh-100"
+                        style="width:100%; height: 800px; object-fit: cover;"
+                        alt="..." />
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="display-3 fw-bold">Programer</h5>
+                        <p class="fs-3 fw-lighter">
+                            Enjoy solving real-world problems<br />
+                            Website front-end/ Data scientist/ AI
+                        </p>
+                    </div>
+                    <div class="carousel-caption d-md-none ">
+                        <h3>Programer</h3>
+                    </div>
+                </div>
+
+                <!-- Thrid image -->
+                <div class="carousel-item" data-bs-interval="20000">
+                    <a href="projects.html">
+                        <img src="./image/freelancer/freelancer.jpg"
+                            class="mh-100"
+                            style="width:100%; height: 800px; object-fit:
+                            cover;"
+                            alt="..." />
+                    </a>
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5 class="display-3 fw-bold">Freelancer</h5>
+                        <p class="fs-3 fw-lighter tackle varies projects">
+                            Self-taught videographer <br />
+                            Documentary/ Vlog / Product clip
+                        </p>
+                    </div>
+                    <div class="carousel-caption d-md-none ">
+                        <h3>Freelancer</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Previous/Next button-->
+            <button class="carousel-control-prev" type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-    </nav>
+
+        <!-- HeroBar section -->
+        <section class="d-flex flex-column align-items-center">
+            <div class="row m-3 border-5 border-bottom max-vw-75">
+                <figcaption class="figure-caption align-self-center m-1 ">
+                    <h1>CHEN YU CHENG</h1>
+                    <p class="fs-5 ">Taipei based
+                        freelancer<br>
+                        Programer/ Photograher/ Traveler<br>Contact:
+                        b812107036@tmu.edu.tw</p>
+                </figcaption>
+
+            </div>
+        </section>
 
 
-    <!-- HeroBar section -->
-    <main class="container-fluid text-center">
-        <div class=" p-2 rounded ">
-            <h1>Freelancer</h1>
-            <p class="lead ">I am a photographer based on Taipei</p>
-            <p class="lead ">
-                <a href="# " class="btn btn-lg btn-secondary fw-bold ">Learn more</a>
-            </p>
-        </div>
 
-
-    </main>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-
-    <!-- Footer section -->
-    <footer class="text-muted text-center fixed-bottom">
-        <div class="container">
-            <p> Copyright &copy 2022 sc0210
-                <br>All rights reserved.</p>
-        </div>
-    </footer>
-</body>
-
+        <!-- Footer section -->
+        <footer class="text-muted text-center">
+            <div class="container">
+                <p>Copyright &copy 2022 sc0210 <br />All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+        crossorigin="anonymous "></script>
 </html>

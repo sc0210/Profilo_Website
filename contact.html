@@ -9,36 +9,91 @@
 
     <link href="style.css" rel="stylesheet">
     <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <link rel="icon" type="image/x-icon " href="/image/icon.png ">
-    <link rel="stylesheet " href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-
 <body>
-    <div id="content-wrap">
-        <!-- Navbar section -->
-        <div class="navbar">
-            <div>
-                <a href="index.html "><img class="navbar-logo " src="./image/icon.png " alt="Logo "></a>
-            </div>
-            <div class="navbar-text " id="navbar">
-                <a href="index.html ">Profolio</a>
-                <a target="_blank " href="academic.html ">Academic</a>
-                <a target="_blank " href="freelancer.html ">Freelancer</a>
-                <a class="icon" href="javascript:void(0);" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-        </div>
+    <!-- Navbar section -->
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img width="35px" src="./image/icon.png " alt="Logo "></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-        <!-- HeroBar section -->
-        <div class="herobar-image">
-            <div class="herobar-text">
-                <p>0936-556-436</p>
-                <button>DM me for further information</button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+                <ul class="navbar-nav  mb-2 mb-md-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link activate" aria-current="page " href="index.html ">Home</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link activate" aria-current="page " href="profilo.html">Profilo</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link activate" aria-current="page " href="projects.html">Projects</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link activate" aria-current="page " href="contact.html">Contacts</a></li>
+                </ul>
             </div>
         </div>
-    </div>
+    </nav>
+    <main class="w-50  position-absolute top-50 start-50 translate-middle">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <form class="row -3">
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress" class="form-label">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+                <label for="inputAddress2" class="form-label">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+                <label for="inputCity" class="form-label">City</label>
+                <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+                <label for="inputState" class="form-label">State</label>
+                <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+                <label for="inputZip" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary">Sign in</button>
+            </div>
+        </form>
+    </main>
 
     <!-- Footer section -->
     <div class="footer ">
